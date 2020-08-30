@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { connect } from "react-redux";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
@@ -11,22 +12,11 @@ import Input from "@material-ui/core/Input";
 
 import styles from "./customInputStyle";
 
+import { addUserEmail, addUserPassword } from "../../actions/auth";
+
 const useStyles = makeStyles(styles);
 
-export default function CustomInput(props) {
-  const inputState = useState("");
-  const inputValue = inputState[0];
-  const setInputValue = inputState[1];
-
-  function handleInputChange(e) {
-    setInputValue(e.target.value);
-    checkChange();
-  }
-  function checkChange() {
-    console.log("email:", inputValue);
-  }
-
-  const classes = useStyles();
+function CustomInput(props) {
   const {
     formControlProps,
     labelText,
@@ -38,6 +28,17 @@ export default function CustomInput(props) {
     inputRootCustomClasses,
     success,
   } = props;
+
+  function handleInputChange(e) {
+    if (labelText === "Email") {
+      console.log("yes");
+      props.dispatch(addUserEmail(e.target.value));
+    } else {
+      props.dispatch(addUserPassword(e.target.value));
+    }
+  }
+
+  const classes = useStyles();
 
   const labelClasses = classNames({
     [" " + classes.labelRootError]: error,
@@ -77,7 +78,6 @@ export default function CustomInput(props) {
         </InputLabel>
       ) : null}
       <Input
-        value={inputValue}
         onChange={handleInputChange}
         classes={{
           input: inputClasses,
@@ -103,3 +103,11 @@ CustomInput.propTypes = {
   success: PropTypes.bool,
   white: PropTypes.bool,
 };
+
+function mapStateToProps(state) {
+  return {
+    state,
+  };
+}
+
+export default connect(mapStateToProps)(CustomInput);
