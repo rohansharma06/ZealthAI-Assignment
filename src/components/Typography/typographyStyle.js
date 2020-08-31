@@ -36,16 +36,20 @@ const typographyStyle = {
     color: "#777",
   },
   primaryText: {
-    color: primaryColor,
+    fontSize: "25px",
+    fontWeight: "bold",
+    color: "#002dd0c2",
   },
   infoText: {
+    fontSize: "35px",
+    fontWeight: "bolder",
     color: infoColor,
   },
   successText: {
     color: successColor,
   },
   warningText: {
-    color: warningColor,
+    color: "black",
   },
   dangerText: {
     color: dangerColor,
