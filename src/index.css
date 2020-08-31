@@ -10,28 +10,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: rgb(219, 226, 226);
+  background: rgb(174, 179, 179, 1);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 .row {
   background: white;
   border-radius: 30px;
   box-shadow: 12px 12px 22px gray;
 }
-
-img {
-  height: 100%;
-  width: 100%;
+.login-icon {
+  margin-left: 20px;
+  color: black;
+}
+.side-image {
+  background-color: #54ab2df5;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  /* display: none; */
+}
+img {
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .btn1 {
@@ -43,6 +48,13 @@ img {
   font-weight: bold;
 }
 
-.error {
-  color: red;
+a {
+  color: #002dd0c2;
+}
+
+@media (max-width: 990px) {
+  .side-image,
+  .img {
+    display: none;
+  }
 }
