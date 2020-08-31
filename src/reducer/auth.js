@@ -8,20 +8,40 @@ import {
 
 //---- initial states
 const initialAuthState = {
-  error: null,
+  error: false,
   userEmail: "",
   userPassword: "",
   isLoggedin: false,
   inProgress: false,
 };
 
-//---- actions of different action types
+//---- changing store data accordingly different action
 export default function auth(state = initialAuthState, action) {
   switch (action.type) {
     case LOGIN_START: {
       return {
         ...state,
         inProgress: true,
+      };
+    }
+    case LOGIN_SUCCESS: {
+      // console.log("LOGIN_SUCCESS:");
+      return {
+        ...state,
+        isLoggedin: true,
+        inProgress: false,
+        error: false,
+        userEmail: "",
+        userPassword: "",
+      };
+    }
+    case LOGIN_FAILED: {
+      // console.log("LOGIN_FAILED:");
+      return {
+        ...state,
+        inProgress: false,
+        isLoggedin: false,
+        error: true,
       };
     }
     case USER_EMAIL: {
