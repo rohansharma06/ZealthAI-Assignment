@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Zealth-AI-Assignment/static/css/main.84bf5fd0.chunk.css",
-    "main.js": "/Zealth-AI-Assignment/static/js/main.435873a9.chunk.js",
-    "main.js.map": "/Zealth-AI-Assignment/static/js/main.435873a9.chunk.js.map",
-    "runtime-main.js": "/Zealth-AI-Assignment/static/js/runtime-main.b07e5139.js",
-    "runtime-main.js.map": "/Zealth-AI-Assignment/static/js/runtime-main.b07e5139.js.map",
-    "static/js/2.e868d72f.chunk.js": "/Zealth-AI-Assignment/static/js/2.e868d72f.chunk.js",
-    "static/js/2.e868d72f.chunk.js.map": "/Zealth-AI-Assignment/static/js/2.e868d72f.chunk.js.map",
-    "index.html": "/Zealth-AI-Assignment/index.html",
-    "precache-manifest.600b770ac58b3390449091645431c1c5.js": "/Zealth-AI-Assignment/precache-manifest.600b770ac58b3390449091645431c1c5.js",
-    "service-worker.js": "/Zealth-AI-Assignment/service-worker.js",
-    "static/css/main.84bf5fd0.chunk.css.map": "/Zealth-AI-Assignment/static/css/main.84bf5fd0.chunk.css.map",
-    "static/js/2.e868d72f.chunk.js.LICENSE.txt": "/Zealth-AI-Assignment/static/js/2.e868d72f.chunk.js.LICENSE.txt",
-    "static/media/logo.png": "/Zealth-AI-Assignment/static/media/logo.bd3edf14.png"
+    "main.css": "/ZealthAI-Assignment/static/css/main.84bf5fd0.chunk.css",
+    "main.js": "/ZealthAI-Assignment/static/js/main.435873a9.chunk.js",
+    "main.js.map": "/ZealthAI-Assignment/static/js/main.435873a9.chunk.js.map",
+    "runtime-main.js": "/ZealthAI-Assignment/static/js/runtime-main.3ddb8e8e.js",
+    "runtime-main.js.map": "/ZealthAI-Assignment/static/js/runtime-main.3ddb8e8e.js.map",
+    "static/js/2.e868d72f.chunk.js": "/ZealthAI-Assignment/static/js/2.e868d72f.chunk.js",
+    "static/js/2.e868d72f.chunk.js.map": "/ZealthAI-Assignment/static/js/2.e868d72f.chunk.js.map",
+    "index.html": "/ZealthAI-Assignment/index.html",
+    "precache-manifest.e4024dee201c6df48b69173c97c63994.js": "/ZealthAI-Assignment/precache-manifest.e4024dee201c6df48b69173c97c63994.js",
+    "service-worker.js": "/ZealthAI-Assignment/service-worker.js",
+    "static/css/main.84bf5fd0.chunk.css.map": "/ZealthAI-Assignment/static/css/main.84bf5fd0.chunk.css.map",
+    "static/js/2.e868d72f.chunk.js.LICENSE.txt": "/ZealthAI-Assignment/static/js/2.e868d72f.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/ZealthAI-Assignment/static/media/logo.bd3edf14.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b07e5139.js",
+    "static/js/runtime-main.3ddb8e8e.js",
     "static/js/2.e868d72f.chunk.js",
     "static/css/main.84bf5fd0.chunk.css",
     "static/js/main.435873a9.chunk.js"
