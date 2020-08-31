@@ -39,26 +39,25 @@ export function login(email, password) {
     dispatch(startLogin());
 
     const url = APIUrls.login();
-    const params = JSON.stringify({
+    //---- convert data in json format
+    const body = JSON.stringify({
       email: email,
       password: password,
     });
+    //---- craete API call and get response
     fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: params,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("data", data.message);
-        if (data.message) {
-          dispatch(loginSuccess());
-          return;
-        }
-        dispatch(loginFailed());
-      });
+      body: body,
+    }).then((response) => {
+      if (response.status === 200) {
+        dispatch(loginSuccess());
+        return;
+      }
+      dispatch(loginFailed());
+    });
   };
 }
 
