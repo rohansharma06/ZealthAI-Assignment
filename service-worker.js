@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Zealth-AI-Assignment/precache-manifest.70f9daabc811a5f44465d9366309d020.js"
+  "/Zealth-AI-Assignment/precache-manifest.600b770ac58b3390449091645431c1c5.js"
 );
 
 self.addEventListener('message', (event) => {

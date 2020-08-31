@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eef2dad6cf006db4876546e4c4124c03",
+    "revision": "c4b7e1c9cb3bedadf376aa84ec0460dc",
     "url": "/Zealth-AI-Assignment/index.html"
   },
   {
