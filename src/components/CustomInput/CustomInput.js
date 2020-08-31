@@ -29,9 +29,9 @@ function CustomInput(props) {
     success,
   } = props;
 
+  //---- store input data to store
   function handleInputChange(e) {
     if (labelText === "Email") {
-      console.log("yes");
       props.dispatch(addUserEmail(e.target.value));
     } else {
       props.dispatch(addUserPassword(e.target.value));
@@ -104,10 +104,11 @@ CustomInput.propTypes = {
   white: PropTypes.bool,
 };
 
+//---- access data from store
 function mapStateToProps(state) {
   return {
     state,
   };
 }
-
+//---- connecting store data to app components
 export default connect(mapStateToProps)(CustomInput);
