@@ -1,11 +1,9 @@
 import {
   defaultFont,
-  primaryColor,
   infoColor,
   successColor,
-  warningColor,
   dangerColor,
-} from "../material-kit-react";
+} from "./material-kit-react";
 
 const typographyStyle = {
   defaultFontStyle: {

@@ -19,7 +19,7 @@ const PrivateRoute = (privateRoutProps) => {
       render={() => {
         return isLoggedin ? (
           <Route
-            path="/"
+            path={path}
             component={() => {
               window.location.href = "http://google.com";
               return null;
@@ -36,6 +36,7 @@ const PrivateRoute = (privateRoutProps) => {
 class App extends React.Component {
   render() {
     const { isLoggedin } = this.props;
+
     return (
       <Router>
         <div>

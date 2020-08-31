@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { login } from "../actions/auth";
@@ -12,14 +12,14 @@ import People from "@material-ui/icons/PeopleAlt";
 import Icon from "@material-ui/core/Icon";
 
 //---- custom components by creative Tim
-import CustomInput from "../components/CustomInput/CustomInput";
-import Button from "../components/CustomButtons/Button";
-import Danger from "../components/Typography/Danger";
-import Info from "../components/Typography/Info";
-import Primary from "../components/Typography/Primary";
-import Warning from "../components/Typography/Warning";
+import CustomInput from "./CustomInput/CustomInput";
+import Button from "./CustomButtons/Button";
+import Danger from "./Typography/Danger";
+import Info from "./Typography/Info";
+import Primary from "./Typography/Primary";
+import Warning from "./Typography/Warning";
 
-class Login extends Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
 

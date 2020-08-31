@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import styles from "./typographyStyle";
+import styles from "../../assets/js/typographyStyle";
 
 const useStyles = makeStyles(styles);
 

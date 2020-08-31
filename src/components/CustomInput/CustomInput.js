@@ -10,7 +10,7 @@ import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Input from "@material-ui/core/Input";
 
-import styles from "./customInputStyle";
+import styles from "../../assets/js/customInputStyle";
 
 import { addUserEmail, addUserPassword } from "../../actions/auth";
 
