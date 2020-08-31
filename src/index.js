@@ -6,9 +6,10 @@ import App from "./views/App";
 import { configureStore } from "./store";
 
 const store = configureStore();
-console.log("Mystore:", store.getState());
+// console.log("Mystore:", store.getState());
 
 ReactDOM.render(
+  //---- provider connect store to app
   <Provider store={store}>
     <React.StrictMode>
       <App />
