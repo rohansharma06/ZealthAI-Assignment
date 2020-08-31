@@ -1,14 +1,59 @@
 import React from "react";
-import Login from "./Login";
 import { connect } from "react-redux";
-import PropTypes from "prop-types";
+import Login from "./Login";
 
-function App() {
-  return <Login />;
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+
+//---- create prrivate route
+const PrivateRoute = (privateRoutProps) => {
+  const { path, isLoggedin } = privateRoutProps;
+
+  return (
+    <Route
+      path={path}
+      render={() => {
+        return isLoggedin ? (
+          <Route
+            path="/"
+            component={() => {
+              window.location.href = "http://google.com";
+              return null;
+            }}
+          />
+        ) : (
+          <Redirect to={{ pathname: "/" }} />
+        );
+      }}
+    />
+  );
+};
+
+class App extends React.Component {
+  render() {
+    const { isLoggedin } = this.props;
+    return (
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/" component={Login} />
+            <PrivateRoute path="/google" isLoggedin={isLoggedin} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
-// App.propTypes = {
-//   posts: PropTypes.array.isRequired,
-// };
-
-export default App;
+//---- access data from store
+function mapStoreToProps(state) {
+  return {
+    isLoggedin: state.isLoggedin,
+  };
+}
+//---- connecting store data to app components
+export default connect(mapStoreToProps)(App);
