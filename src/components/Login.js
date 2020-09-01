@@ -19,6 +19,8 @@ import Info from "./Typography/Info";
 import Primary from "./Typography/Primary";
 import Warning from "./Typography/Warning";
 
+const startURL = "/ZealthAI-Assignment";
+
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -54,7 +56,7 @@ class Login extends React.Component {
 
     //---- if user is login only then redirect to google
     if (isLoggedin) {
-      return <Redirect to="/google" />;
+      return <Redirect to={startURL + "/google"} />;
     }
     return (
       <section className="Form my-5 mx-5">

@@ -9,10 +9,12 @@ import {
   Redirect,
 } from "react-router-dom";
 
+const startURL = "/ZealthAI-Assignment";
+
 //---- create prrivate route
 const PrivateRoute = (privateRoutProps) => {
   const { path, isLoggedin } = privateRoutProps;
-
+  console.log("path:", path);
   return (
     <Route
       path={path}
@@ -26,7 +28,7 @@ const PrivateRoute = (privateRoutProps) => {
             }}
           />
         ) : (
-          <Redirect to={{ pathname: "/" }} />
+          <Redirect to={{ pathname: startURL }} />
         );
       }}
     />
@@ -41,8 +43,8 @@ class App extends React.Component {
       <Router>
         <div>
           <Switch>
-            <Route exact path="/" component={Login} />
-            <PrivateRoute path="/google" isLoggedin={isLoggedin} />
+            <Route exact path={startURL + "/"} component={Login} />
+            <PrivateRoute path={startURL + "/google"} isLoggedin={isLoggedin} />
           </Switch>
         </div>
       </Router>
