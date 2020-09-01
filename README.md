@@ -1,7 +1,7 @@
 # Zealth-AI Assignment
 
-> A login page for doctor created using React and Material.
-> To watch UI (API will not work on https): [click here...](https://rohansharma06.github.io/ZealthAI-Assignment/)
+> - A login page for doctor created using React and Material. <br/>
+> - To watch UI (API will not work on https): [click here...](https://rohansharma06.github.io/ZealthAI-Assignment/)
 
 ## Functionality
 
@@ -13,7 +13,7 @@
 
 ## Preview
 
-![home][/src/assets/image/login.jpg]
+![home](/src/assets/image/login.JPG)
 
 ## Folder Structure
 
