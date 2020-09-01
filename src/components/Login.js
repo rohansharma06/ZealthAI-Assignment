@@ -60,7 +60,7 @@ class Login extends React.Component {
     }
     return (
       <section className="Form my-5 mx-5">
-        <div className="container pt-5">
+        <div className="container">
           <div className="row no-gutters">
             <div className="col-lg-5 side-image">
               <img src={image} className="img-fluid" alt="logo-img" />
